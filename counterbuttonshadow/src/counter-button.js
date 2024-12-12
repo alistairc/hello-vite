@@ -60,6 +60,6 @@ class CounterButtonElement extends HTMLElement {
     }
 }
 
-export function registerElement(elementName = 'counter-button') {
+export function registerElement(elementName = 'counter-button-shadow') {
     customElements.define(elementName, CounterButtonElement)
 }

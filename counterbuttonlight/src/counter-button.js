@@ -57,6 +57,6 @@ class CounterButtonElement extends HTMLElement {
     }
 }
 
-export function registerElement(elementName = 'counter-button') {
+export function registerElement(elementName = 'counter-button-light') {
     customElements.define(elementName, CounterButtonElement)
 }
