@@ -1,3 +1,5 @@
+import './style.css'; 
+
 class CounterButtonElement extends HTMLElement {
     count = 0
     message = ''
