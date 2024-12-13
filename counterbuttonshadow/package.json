@@ -6,8 +6,7 @@
     "files": [
         "dist"
     ],
-    "main": "dist/counterbuttonshadow.umd.cjs",
-    "module": "dist/counterbuttonshadow.js",
+    "module": "src/counter-button.js",
     "scripts": {
         "dev": "vite",
         "build": "vite build",

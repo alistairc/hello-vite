@@ -9,8 +9,8 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "counterbuttonlight": "..\\counterbuttonlight",
-        "counterbuttonshadow": "..\\counterbuttonshadow"
+        "counterbuttonlight": "*",
+        "counterbuttonshadow": "*"
     },
     "devDependencies": {
         "vite": "^6.0.1"

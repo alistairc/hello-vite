@@ -1,0 +1,12 @@
+{
+    "name": "hello-vite",
+    "version": "1.0.0",
+    "workspaces": [
+        "example-client",
+        "counterbuttonlight",
+        "counterbuttonshadow"
+    ],
+    "scripts": {
+        "clean": ""
+    }
+}
