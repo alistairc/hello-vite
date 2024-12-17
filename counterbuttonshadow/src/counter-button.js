@@ -1,6 +1,8 @@
+import styleUrl from './style.css?url';
+
 class CounterButtonElement extends HTMLElement {
-    count = 0
-    message = ''
+    count = 0;
+    message = '';
 
     constructor() {
         super();
@@ -9,11 +11,11 @@ class CounterButtonElement extends HTMLElement {
 
     up() {
         if (this.count == 10) {
-            this.message = "Can't go any higher!"
+            this.message = "Can't go any higher!";
             this.update();
             return;
         }
-        this.message = ""
+        this.message = "";
         this.count++;
 
         this.update();
@@ -21,11 +23,11 @@ class CounterButtonElement extends HTMLElement {
 
     down()  {
         if (this.count == 0) {
-            this.message = "Can't go any lower!"
+            this.message = "Can't go any lower!";
             this.update();
             return;
         }
-        this.message = ""
+        this.message = "";
         this.count--;
 
         this.update();
@@ -34,15 +36,16 @@ class CounterButtonElement extends HTMLElement {
     connectedCallback() {
         this.render();
 
-        var upButton = this.shadow.querySelector("#upButton")
+        const upButton = this.shadow.querySelector("#upButton");
         upButton.addEventListener('click', this.up.bind(this));
 
-        var downButton = this.shadow.querySelector("#downButton")
+        const downButton = this.shadow.querySelector("#downButton");
         downButton.addEventListener('click', this.down.bind(this));
     }
 
     render() {
         this.shadow.innerHTML = `
+            <link rel="stylesheet" href="${styleUrl}" />
             <button id="upButton">Up</button>
             <button id="downButton">Down</button>
             <div id="messages">
