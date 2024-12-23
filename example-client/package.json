@@ -13,7 +13,6 @@
         "counterbuttonshadow": "file:../counterbuttonshadow"
     },
     "devDependencies": {
-        "@rollup/rollup-linux-x64-gnu": "*",
         "vite": "^6.0.3"
     }
 }
