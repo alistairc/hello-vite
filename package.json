@@ -2,11 +2,14 @@
     "name": "hello-vite",
     "version": "1.0.0",
     "workspaces": [
-        "example-client",
         "counterbuttonlight",
-        "counterbuttonshadow"
+        "counterbuttonshadow",
+        "example-client"
     ],
     "scripts": {
-        "clean": ""
+        "dev": "npm --workspace=example-client run dev",
+        "build": "npm --workspaces run build",
+        "preview": "npm --workspace=example-client run preview",
+        "clean": "git add -A\ngit clean -fdx"
     }
 }
